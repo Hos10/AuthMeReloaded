@@ -11,23 +11,23 @@ registration:
     command_usage: '&4Użycie: /register <hasło> <powtórz_hasło>'
     reg_only: '&fTylko zarejestrowani użytkownicy mają do tego dostęp!'
     success: '&aPomyślnie zarejestrowany!'
-    kicked_admin_registered: 'Administrator zarejestrował Ciebie, możesz się zalogować.'
+    kicked_admin_registered: 'Administrator Cie zarejestrował, możesz się zalogować.'
 
 # Password errors on registration
 password:
     match_error: '&fHasło niepoprawne!'
-    name_in_password: '&cNie możesz używać nicku jako hasła, wybierz inne...'
+    name_in_password: '&cNie możesz użyć nicku jako hasła, wybierz inne...'
     unsafe_password: '&cTwoje hasło nie jest bezpieczne, wybierz inne...'
     forbidden_characters: '&4W twoim haśle występują niedozwolone znaki, dozwolone znaki to: %valid_chars'
     wrong_length: '&fTwoje hasło jest za krótkie lub za długie! Spróbuj ponownie...'
 
 # Login
 login:
-    command_usage: '&cUżycie: /login hasło'
+    command_usage: '&cUżycie: /login <hasło>'
     wrong_password: '&cNiepoprawne hasło.'
     success: '&aHasło zaakceptowane!'
     login_request: '&2Proszę się zalogować przy użyciu &6/login <hasło>'
-    timeout_error: '&cUpłynął limit czasu zalogowania'
+    timeout_error: '&cUpłynął limit czasu na zalogowanie'
 
 # Errors
 error:
@@ -46,19 +46,19 @@ error:
 # AntiBot
 antibot:
     kick_antibot: '&cAntyBot został włączony, musisz poczekać minutę przed dołączeniem do serwera.'
-    auto_enabled: '&4[AntiBot] &aAntyBot włączony z powodu dużej liczby połączeń!'
-    auto_disabled: '&2[AntiBot] &aAntyBot zostanie wyłączony za &7%m &aminut!'
+    auto_enabled: '&4[AntiBot] &aAntyBot został włączony z powodu dużej liczby połączeń!'
+    auto_disabled: '&2[AntiBot] &aAntyBot zostanie wyłączony za &7%m &amin!'
 
 # Unregister
 unregister:
     success: '&4Pomyślnie wyrejestrowany!'
-    command_usage: '&cUżycie: /unregister hasło'
+    command_usage: '&cUżycie: /unregister <hasło>'
 
 # Other messages
 misc:
     account_not_activated: '&fTwoje konto nie zostało aktywowane! Sprawdź maila.'
     password_changed: '&fHasło zostało zmienione!'
-    logout: '&cPomyślnie wylogowany'
+    logout: '&cPomyślnie wylogowano'
     reload: '&fKonfiguracja bazy danych została przeładowana.'
     usage_change_password: '&fUżycie: /changepassword <stare_hasło> <nowe_hasło>'
     accounts_owned_self: '&7Posiadasz %count kont:'
@@ -72,10 +72,10 @@ session:
 # Error messages when joining
 on_join_validation:
     same_ip_online: '&cGracz z takim samym adresem ip jest aktualnie w grze!'
-    same_nick_online: '&fTen nick już gra na serwerze!'
+    same_nick_online: '&fTen nick gra już na serwerze!'
     name_length: '&cTwoje konto ma za długa bądź za krotką nazwę.'
     characters_in_name: '&cTwoje konto ma w nazwie niedozwolone znaki. Dozwolone znaki: %valid_chars'
-    kick_full_server: '&cSerwer jest teraz zapełniony, przepraszamy!'
+    kick_full_server: '&cSerwer jest teraz przepełniony, przepraszamy!'
     country_banned: '&4Ten kraj jest zbanowany na tym serwerze'
     not_owner_error: '&cNie jesteś właścicielem tego konta, wybierz inny nick!'
     invalid_name_case: '&cPowinieneś dołączyć do serwera z nicku %valid, a nie %invalid.'
@@ -96,7 +96,7 @@ email:
     change_not_allowed: '&cMożliwość zmiany adresu e-mail jest wyłączona.'
     email_show: '&2Twój aktualny adres e-mail to: &f%email'
     no_email_for_account: '&2Nie posiadasz adresu e-mail przypisanego do tego konta.'
-    already_used: '&4Ten adres e-mail jest aktualnie używany!'
+    already_used: '&4Ten adres e-mail jest już połączony z jakimś kontem!'
     incomplete_settings: 'Błąd: Nie wszystkie opcje odpowiedzialne za wysyłanie e-maili zostały skonfigurowane. Skontaktuj się z administracją.'
     send_failure: 'Nie można wysłać e-maila. Skontaktuj się z administracją.'
     change_password_expired: 'Nie zmienisz już hasła przy użyciu tej komendy.'
@@ -104,7 +104,7 @@ email:
 
 # Password recovery by email
 recovery:
-    forgot_password_hint: '&cZapomniałeś hasła? Proszę użyj komendy /email recovery <twój_e-mail>'
+    forgot_password_hint: '&cZapomniałeś hasła? Użyj komendy /email recovery <twój_e-mail>'
     command_usage: '&fWpisz: /email recovery <email>'
     email_sent: '[AuthMe] E-mail z odzyskaniem wysłany!'
     code:
@@ -128,8 +128,8 @@ verification:
     command_usage: '&cUżycie: /verification <kod>'
     incorrect_code: '&cNieprawidłowy kod z e-maila, wpisz komende "/verification <kod>". W miejscu <kod> wpisz swój kod z emaila.'
     success: '&2Twoja tożsamość została zweryfikowana! Możesz teraz wykonywać wszystkie komendy w bieżącej sesji!'
-    already_verified: '&2Możesz już wykonać każdą komende w bieżącej sesji!'
-    code_expired: '&3Twój kod wygasł! Wykonaj ponownie komende, aby uzyskać nowy kod!'
+    already_verified: '&2Teraz możesz wykonać każdą komende w bieżącej sesji!'
+    code_expired: '&3Twój kod wygasł! Wpisz ponownie komendę, aby uzyskać nowy kod!'
     email_needed: '&3Aby zweryfikować swoją tożsamość, musisz połączyć adres e-mail z kontem!'
 
 # Time units
